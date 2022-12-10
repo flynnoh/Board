@@ -44,14 +44,19 @@
                     name="content"
                     class="form-control"
                     id="inputContent"
-                    th:value="${post.content}"
+                    th:text="${post.content}"
             ></textarea>
             </div>
         </div>
+        <div>
+            <br>
+              </div>
         <div class="row">
             <div class="col-auto mr-auto"></div>
-            <div class="col-auto">
-                <input class="btn btn-primary" type="submit" role="button" value="수정" />
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="/" role="button" padding="4px" class="btn btn-secondary">취소</a>
+                <input class="btn btn-primary" padding="4px" type="submit" role="button" value="수정" />
+
             </div>
         </div>
     </form>

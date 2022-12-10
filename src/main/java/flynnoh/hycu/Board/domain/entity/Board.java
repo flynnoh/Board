@@ -28,7 +28,7 @@ public class Board {
     @Column(length = 100, nullable = false)
     private String title;
 
-    @Column(columnDefinition = "TEXT", nullable = false)
+    @Column(length = 1000,  columnDefinition = "TEXT", nullable = false)
     private String content;
 
     @CreatedDate
